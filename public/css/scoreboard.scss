@@ -1,0 +1,65 @@
+$tr_bg_clr1: white;
+$tr_bg_clr2: mix($content_bgcolor, $tr_bg_clr1);
+$tr_text_clr1: mix(black, $content_bgcolor);
+$tr_text_clr2: black;
+$vertical_padding: 8px;
+$horizontal_padding: 8px;
+
+.body-scoreboard {
+    @extend .background_image;
+    background-image: url("/image/sky.jpg");
+}
+
+.scoreboard {
+    @extend .big_block;
+}
+
+.scoreboard__table {
+    border-radius: 15px;
+    font-size: 20px; 
+    width: 95%;
+    margin: auto;
+}
+
+.scoreboard__table__tr {
+}
+
+.scoreboard__table__tr:nth-child(even) {
+    background-color: $tr_bg_clr1;
+    color: $tr_text_clr1;
+}
+
+.scoreboard__table__tr:nth-child(odd) {
+    background-color: $tr_bg_clr2;
+    color: $tr_text_clr2;
+}
+
+.scoreboard__table__tr:first-child {
+    background-color: $accented_color;
+    color: $accented_text_color;
+}
+
+.scoreboard__table__tr__td {
+    padding-left: $horizontal_padding;
+    padding-right: $horizontal_padding;
+    padding-top: $vertical_padding;
+    padding-bottom: $vertical_padding;
+    text-align: center;
+    width: 24%;
+}
+
+.scoreboard__table__tr__td:nth-child(1) {
+    width: 7%;
+}
+
+.scoreboard__table__tr__td:nth-child(2) {
+    width: 31%;
+}
+
+.scoreboard__table__tr__td:nth-child(3) {
+    width: 31%;
+}
+
+.scoreboard__table__tr__td:nth-child(4) {
+    width: 31%;
+}

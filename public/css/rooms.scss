@@ -1,0 +1,95 @@
+$room_border: 1px solid black;
+$room_bgcolor: mix($content_bgcolor, white);
+$width: 95%;
+
+.body-rooms {
+    @extend .background_image;
+    background-image: url("/image/sky.jpg");
+}
+
+.rooms {
+    @extend .big_block;
+    background-color: $content_bgcolor_transparent;
+}
+
+.rooms__block {
+    width: $width;
+    margin: auto;
+    border-radius: 15px;
+    border: $room_border;
+    background-color: $room_bgcolor;
+    text-align: center;
+}
+
+.rooms__room {
+    @extend .rooms__block;
+    height: 80px;
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+.rooms__room__header {
+    font-family: $content_font_family;
+}
+
+.rooms__create {
+    color: $button_text_color;
+    background-color: $button_color;
+    border: $button_border;
+    border-radius: 15px;
+    height: 60px;
+    width: 300px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rooms__details {
+    @extend .rooms__block;
+    min-height: 40vh;
+}
+
+.rooms__details__header {
+
+}
+
+.rooms__details__colors {
+    width: 90%;
+}
+
+.rooms__details__colors__color {
+    border: 1px solid mix($content_bgcolor, black);
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.rooms__details__colors__color-clicked {
+    @extend .rooms__details__colors__color;
+    width: 40px;
+    height: 40px;
+}
+
+.rooms__details__error {
+    @extend .error;
+}
+
+.rooms__details__join {
+    @extend .rooms__create;
+    clear:both;
+}
+
+.rooms__details__ul {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.rooms__details__ul__li {
+    height: 30px;
+}
+
+.rooms__details__ul__li__color {
+    @extend .rooms__details__colors__color;
+    width: 20px;
+    height: 20px;
+}

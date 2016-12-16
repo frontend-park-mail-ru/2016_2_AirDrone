@@ -1,0 +1,48 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <h1 class="rooms__header">Выберите игру</h1>
+    <fest:each iterate="json" index="i" value="room">
+        <div class="rooms__room">
+            <h2 class="rooms__room__header"><fest:value>room.name</fest:value><fest:space />(<fest:value>room.ip</fest:value>)</h2>
+        </div>
+        <div class="rooms__details" hidden="hidden">
+            <h1 class="rooms__details__header">Выберите квадрокоптер:</h1>
+            <div class="rooms__details__colors">
+                <fest:each iterate="room.availableColors" index="i" value="color">
+                    <input class="rooms__details__colors__color js-color">
+                        <fest:attributes>
+                            <fest:attribute name="style">background-color:<fest:value>color</fest:value>; color:<fest:value>color</fest:value>;</fest:attribute>
+                        </fest:attributes>
+                    </input>
+                </fest:each>
+            </div>
+            <p class="js-error rooms__details__error" hidden="hidden"></p>
+            <button class="rooms__details__join js-join">Присоединиться!</button>
+            <hr />
+            <h1 class="rooms__details__header">Уже в игре:</h1>
+            <table class="rooms__details__ul">
+                <ul>
+                    <fest:each iterate="room.drones" index="i" value="drone">
+                        <tr class="room__details__ul__li">
+                            <td>
+                                <li>
+                                    <fest:value>drone.playerLogin</fest:value>
+                                </li>
+                            </td>
+                            <td>
+                                <input type="text" class="rooms__details__ul__li__color" disabled="disabled">
+                                    <fest:attributes>
+                                        <fest:attribute name="style">background-color:<fest:value>drone.color</fest:value>;</fest:attribute>
+                                    </fest:attributes>
+                                </input>
+                            </td>
+                        </tr>
+                    </fest:each>
+                </ul>
+            </table>
+        </div>
+    </fest:each>
+    <hr />
+    <button class="js-create rooms__create">Лидеры</button><!-- TODO new room creation -->
+
+</fest:template>
+

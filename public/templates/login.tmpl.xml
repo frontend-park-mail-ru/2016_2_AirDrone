@@ -1,0 +1,11 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <form class="js-login-form login__form" name="loginForm">
+        <h1 class="login__header">Вход</h1>
+        <span class="js-email-error login__form__error" name="emailError" hidden="hidden"></span>
+        <input placeholder="E-mail" class="js-email login__form__input" name="email" type="text" />
+        <span class="js-password-error login__form__error" name="passwordError" hidden="hidden"></span>
+        <input placeholder="Password" class="js-password login__form__input" name="password" type="password" />
+        <button class="js_submit login__form__button" name="button">Войти!</button>
+        <a class="login__form__link" name="registration">Регистрация</a>
+    </form>
+</fest:template>

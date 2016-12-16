@@ -1,5 +1,6 @@
 {
     "globals": {
-        "_request": true
+        "_request": true,
+        "fest": true
     }
 }

@@ -3,25 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>AirDrone</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
 </head>
 <body>
 
 	<div class="main"></div>
-    <div class="login"></div>
-    <div class="registration"></div>
-    <script src="js/libs.js"></script>
-    <script src="js/models/components/Component.js"></script>
-    <script src="js/models/components/Input.js"></script>
-    <script src="js/models/components/Link.js"></script>
-    <script src="js/models/components/Header.js"></script>
-    <script src="js/models/components/Message.js"></script>
-    <script src="js/models/components/Button.js"></script>
-    <script src="js/models/RegistrationForm.js"></script>
-    <script src="js/views/registrationView.js"></script>
-    <script src="js/models/LoginForm.js"></script>
-    <script src="js/views/loginView.js"></script>
-    <script src="js/airdrone.js"></script>
+    <div class="js-login login" hidden="hidden"></div>
+    <div class="js-registration registration" hidden="hidden"></div>
+    <div class="js-scoreboard scoreboard" hidden="hidden"></div>
+    <div class="js-rooms rooms" hidden="hidden"></div>
+    <div class="js-game game" hidden="hidden"></div>
+
+    <script src="dist/js/airdrone.vendor.js"></script>
+    <script src="dist/js/airdrone.bundle.js"></script>
 
 </body>
 </html>

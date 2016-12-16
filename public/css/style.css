@@ -1,0 +1,57 @@
+.body-login, .body-registration {
+  background-image: url("/image/login_background.jpg");
+  background-position: center -25vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+.login, .registration {
+  position: absolute;
+  width: 20%;
+  min-width: 350px;
+  background-color: #f0f0f0;
+  border-radius: 17px;
+  top: 25vh;
+  left: 10%;
+  padding-bottom: 10px;
+  border: solid 1px #ddd;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Open Sans', arial; }
+
+.login__form, .registration__form {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center; }
+
+.login__form__input, .registration__form__input {
+  width: 90%;
+  height: 45px;
+  font-size: 20px;
+  margin-bottom: 5px; }
+
+.login__form__button, .registration__form__button {
+  border-radius: 5px;
+  background-color: #4d90fe;
+  border: solid 1px #11d;
+  font-size: 20px;
+  width: 93%;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 7px; }
+
+.login__header, .registration__header {
+  text-align: center; }
+
+.login__form__link, .registration__form__link {
+  color: #4d90fe;
+  text-decoration: underline;
+  text-align: center; }
+
+.login__form__error, .registration__form__error {
+  font-style: italic;
+  color: red;
+  text-align: left;
+  margin-left: 12px; }
+
+.registration {
+  top: 20vh; }

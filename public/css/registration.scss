@@ -1,0 +1,32 @@
+.body-registration {
+    @extend .body-login;
+}
+
+.registration {
+    @extend .login;
+  top: 20vh;
+}
+
+.registration__form {
+    @extend .login__form;
+}
+
+.registration__form__input {
+    @extend .login__form__input;
+}
+
+.registration__form__button {
+    @extend .login__form__button;
+}
+
+.registration__header {
+  @extend .login__header;
+}
+
+.registration__form__link {
+    @extend .login__form__link;
+}
+
+.registration__form__error {
+    @extend .login__form__error;
+}

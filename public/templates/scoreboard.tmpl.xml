@@ -1,0 +1,21 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <h1 class="scoreboard__header">Лидеры</h1>
+    <table class="scoreboard__table">
+        <tr class="scoreboard__table__tr">
+            <td class="scoreboard__table__tr__td">#</td>
+            <td class="scoreboard__table__tr__td">Имя</td>
+            <td class="scoreboard__table__tr__td">Количество боев</td>
+            <td class="scoreboard__table__tr__td">Процент побед</td>
+        </tr>
+
+        <fest:each iterate="json" index="i" value="data">
+            <tr class="scoreboard__table__tr">
+                <td class="scoreboard__table__tr__td"><fest:value>i</fest:value></td>
+                <td class="scoreboard__table__tr__td"><fest:value>data.username</fest:value></td>
+                <td class="scoreboard__table__tr__td"><fest:value>data.games</fest:value></td>
+                <td class="scoreboard__table__tr__td"><fest:value>data.score</fest:value><fest:space />%</td>
+            </tr>
+        </fest:each>
+    </table>
+
+</fest:template>
